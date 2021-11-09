@@ -23,14 +23,12 @@
                 </div>
 
                 <div class="footer-widget col-lg-3 col-md-6 col-12 mb-40">
-                    <h4 class="title">INFORMATION</h4>
+                    <h4 class="title">INFORMACIÓN</h4>
                     <ul>
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">Terms & Conditions</a></li>
-                        <li><a href="#">Payment Method</a></li>
-                        <li><a href="#">Product Warranty</a></li>
-                        <li><a href="#">Return Process</a></li>
-                        <li><a href="#">Payment Security</a></li>
+                        
+                        <li><a href="conocenos.php">Misión</a></li>
+                        <li><a href="conocenos.php">Visión </a></li>
+                        
                     </ul>
                 </div>
 
