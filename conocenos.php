@@ -50,7 +50,7 @@
                     <div class="row">
                         <div class="section-title text-left col mb-30">
                             <h1>MISIÓN</h1>
-                            <p>Nuestra mision es ...</p>
+                            <p>Nuestra misión es ...</p>
                         </div>
                     </div>
 
@@ -71,7 +71,7 @@
                     <div class="row">
                         <div class="section-title text-left col mb-30">
                             <h1>VISIÓN</h1>
-                            <p>Nuestra mision es ...</p>
+                            <p>Nuestra visión es ...</p>
                         </div>
                     </div>
 
