@@ -1,10 +1,12 @@
-<!doctype html>
+
+
+ <!doctype html>
 <html class="no-js" lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Jadusona - eCommerce Baby shop Bootstrap4 Template</title>
+    <title>Inicio</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Favicon -->

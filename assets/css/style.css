@@ -4913,3 +4913,30 @@ img.mfp-img {
   line-height: 30px;
   color: #1a161e;
   margin: 0; }
+
+
+/* Inicio de secion boton */
+a.enlacedes {
+display: inline-block;
+position: relative;
+color: #249702;
+text-decoration: none;
+transition: all .5s ease;
+transform-style: preserve-3d;
+}
+a.enlacedes:after {
+content: "Iniciar sesión";
+position: absolute;
+top: -90%;
+left: 0px;
+width: 100%;
+color: #fff;
+background: #000;
+border-radius: 15px;
+transform-origin: left bottom;
+transform: rotateX(90deg);
+}
+a.enlacedes:hover {
+transform-origin: center bottom;
+transform: rotateX(-60deg) translateY(85%);
+}

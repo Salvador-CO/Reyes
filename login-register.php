@@ -4,11 +4,12 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Jadusona - eCommerce Baby shop Bootstrap4 Template</title>
+    <title>Iniciar/Registro</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
+        <link rel="shortcut icon" type="image/x-icon" href="assets/images/icono2.png" >
+
     
     <!-- CSS
 	============================================ -->
@@ -72,14 +73,6 @@
                                 <div class="col-12"><input type="submit" value="Login"></div>
                             </div>
                         </form>
-                        <h4>You can also login with...</h4>
-                        <div class="social-login">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-google-plus"></i></a>
-                            <a href="#"><i class="fa fa-pinterest"></i></a>
-                            <a href="#"><i class="fa fa-linkedin"></i></a>
-                        </div>
                     </div>
                 </div>
 

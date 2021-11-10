@@ -56,7 +56,7 @@
 
                     <div class="row">
                         <div class="col-12 mb-40">
-                            <div class="testimonial-item">
+                            <div class="testimonial-item" style="text-align: justify;">
                                 <p >Posicionarnos como empresa líder en la industria emergente del Cannabis medicinal en México, guiar una transformación continua en las personas hacia una salud integral y una mejora en la condición humana, llevaremos nuestros productos a canales comerciales minoristas de confianza a los que usualmente llegan la mayoría de consumidores y donde compran con frecuencia, las cadenas minoristas más grandes permitirán nuestro rápido crecimiento, haremos que las cadenas y sus consumidores se sientan cómodos con la mas alta calidad, cumpliendo con estrictas regulaciones siempre pensando en el usuario final. </p> 
                             </div>
                         </div>
@@ -78,7 +78,7 @@
                     <div class="row">
 
                         <div class="col-12 mb-40">
-                            <div class="testimonial-item">
+                            <div class="testimonial-item" style="text-align: justify;">
                                 <p>Nuestro objetivo es convertirnos en los principales productores de THC y CBD en el mercado nacional y regional además estar a la vanguardia en el estudio y la investigación del cannabis y sus derivados para así poder llevar y compartir a nuestra comunidad día a día los avances y descubrimientos en este campo medicinal.</p>
                             </div>
                             <div class="image-wrap" align="center">
