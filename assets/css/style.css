@@ -50,7 +50,9 @@ body {
   visibility: visible;
   font-family: "Poppins", sans-serif;
   color: #333333;
-  position: relative; }
+  position: relative; 
+ }
+
 
 h1, h2, h3, h4, h5, h6 {
   color: #1a161e;
@@ -422,7 +424,7 @@ img.mfp-img {
     - Page Banner Section
 ------------------------------------------*/
 .page-banner-section {
-  padding: 100px 0;
+  padding: 50px 0;
   background-size: cover;
   background-position: center center;
   position: relative;
@@ -484,6 +486,8 @@ img.mfp-img {
 /*---------------------------------------
     02. Header CSS
 -----------------------------------------*/
+
+
 .header-section {
   width: 100%;
   z-index: 99999; }
@@ -4921,22 +4925,4 @@ display: inline-block;
 position: relative;
 color: #249702;
 text-decoration: none;
-transition: all .5s ease;
-transform-style: preserve-3d;
-}
-a.enlacedes:after {
-content: "Iniciar sesión";
-position: absolute;
-top: -90%;
-left: 0px;
-width: 100%;
-color: #fff;
-background: #000;
-border-radius: 15px;
-transform-origin: left bottom;
-transform: rotateX(90deg);
-}
-a.enlacedes:hover {
-transform-origin: center bottom;
-transform: rotateX(-60deg) translateY(85%);
 }
