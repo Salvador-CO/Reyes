@@ -39,6 +39,17 @@
     <!-- Header Section Start -->
     <?php include_once "header.php"; ?>
 
+    <!-- Page Banner Section Start -->
+    <div class="page-banner-section section" style="background-image: url(assets/images/blog/industria.jpg)">
+        <div class="container">
+            <div class="row">
+                <div class="page-banner-content col text-center">
+                    <h1 style="color:#FFFFFF">CONOCENOS</h1>
+                </div>
+            </div>
+        </div>
+    </div><!-- Page Banner Section End -->
+
    
     <!-- Blog Section Start -->
     <div class="blog-section section mt-80 mt-lg-60 mt-md-60 mt-sm-60 mt-xs-40 mb-40 mb-lg-20 mb-md-20 mb-sm-20 mb-xs-0">
@@ -63,8 +74,11 @@
                     </div>
                     <div class="image-wrap" align="center">
                         <img src="assets/images/blog/industria.jpg" alt="" height="200px" width="300px"></a>
+                        <br>
+                        <br>
                     </div>
                 </div>
+
 
                 <div class="col-xl-6 col-lg-7 col-12">
 

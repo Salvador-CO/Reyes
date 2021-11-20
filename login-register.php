@@ -202,7 +202,7 @@
 <!-- Main JS -->
 <script src="assets/js/main.js"></script>
 <script src="assets/js/login.js"></script>
-    <script src="assets/librerias/alertifyjs/alertify.js"></script>
+<script src="assets/librerias/alertifyjs/alertify.js"></script>
 
 
 
