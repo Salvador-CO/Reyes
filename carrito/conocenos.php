@@ -125,7 +125,8 @@
                 </div>
             </div>
         </div>
-    </div><!-- Brand Section End -->
+    </div>
+    <!-- Brand Section End -->
 
     <!-- Footer -->
     <?php include_once "footer.php"; ?>
