@@ -110,7 +110,7 @@ if (empty($_SESSION['active'])) {
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Publicaciones</h6>
-                        <a class="collapse-item" href="#">Blog</a>
+                        <a class="collapse-item" href="blog.php">Blog</a>
                         <a class="collapse-item" href="fotos.php">Imagenes</a>
                     </div>
                 </div>
