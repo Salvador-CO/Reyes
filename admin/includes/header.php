@@ -136,7 +136,7 @@ if (empty($_SESSION['active'])) {
                         <h6 class="collapse-header">Empresa</h6>
                         <a class="collapse-item" href="#">Perfil</a>
                         <a class="collapse-item" href="#">Empresa</a>
-                        <a class="collapse-item" href="#">Redes sociales</a>
+                        <a class="collapse-item" href="redes.php">Redes sociales</a>
                     </div>
                 </div>
             </li>

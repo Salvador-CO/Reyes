@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <!-- site metas -->
-    <title>Reyes</title>
+    <title>Spicyo</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -23,19 +23,18 @@
     <link rel="stylesheet" href="assets/css/responsive.css">
     <!-- awesome fontfamily -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="assets/css/login.css">
+    <link rel="stylesheet" type="text/css" href="assets/librerias/alertifyjs/css/alertify.css">
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
-
-    <link rel="stylesheet" href="assets/css/login.css">
-    <link rel="stylesheet" type="text/css" href="assets/librerias/alertifyjs/css/alertify.css">
 </head>
 <!-- body -->
 
-<body class="main-layout">
+<body class="main-layout blog_page">
     <!-- loader  -->
     <div class="loader_bg">
-        <div class="loader"><img src="assets/images/loading.gif" alt="" /></div>
+        <div class="loader"><img src="assets/images/cargando3.gif" alt="" /></div>
     </div>
 
     <div class="wrapper">
@@ -55,7 +54,7 @@
                         <a href="index.php">Inicio</a>
                     </li>
                     <li>
-                        <a href="#">¡Conocenos!</a>
+                        <a href="conocenos.php">¡Conocenos!</a>
                     </li>
                     <li>
                         <a href="blog.html">Blog</a>
@@ -75,7 +74,7 @@
             <div class="row">
                 <div class="col-md-3">
                     <div class="full">
-                        <a class="logo" href="index.php"><img src="assets/images/logo.png" alt="#" /></a>
+                        <a class="logo" href="index.php"><img src="assets/images/iconoB.png" width="150px" alt="#" /></a>
                     </div>
                 </div>
                 <div class="col-md-9">
@@ -86,7 +85,7 @@
                                     <a href="index.php"><img src="assets/images/home2.jpg" alt="#">Inicio </a>
                                 </li>
                                 <li class="dinone menubtn" >
-                                    <a href="#"><img  src="assets/images/conocenos.png" alt="#">!Conocenos¡</a>
+                                    <a href="conocenos.php"><img  src="assets/images/conocenos.png" alt="#">!Conocenos¡</a>
                                 </li>
                                 <li class="dinone menubtn" >
                                     <a href="#"><img style="position: relative;top: -2px;" src="assets/images/blog.png" alt="#">Blog</a>

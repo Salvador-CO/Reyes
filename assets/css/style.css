@@ -94,12 +94,37 @@
  :focus {
      outline: 0;
 }
+
+.fijot {
+    height: 500px;
+    object-fit: cover;
+    }
+.SCO{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+
+}
+
+.texto-encima{
+    width: 100%;
+    font-weight: 700;
+    position: absolute;
+    top: 40%;
+    
+    color: #fff;
+    font-size: 2em;
+     background:rgba(0,0,0,0.6);
+        
+}
+
  .btn-custom {
      margin-top: 20px;
      background-color: transparent !important;
      border: 2px solid #ddd;
      padding: 12px 40px;
      font-size: 16px;
+}
 }
  .lead {
      font-size: 18px;
@@ -258,7 +283,7 @@
 /*--------------------------------------------------------------------- header ---------------------------------------------------------------------*/
  header {
      min-height: 90px;
-     background: #212020;
+     background: #00582b;
      padding: 15px 0;
      position: fixed;
      width: 100%;
@@ -367,13 +392,15 @@
 }
  .slider_section {
      background: #212020;
-     min-height: 100vh;
+     min-height: 50vh;
      padding-top: 93px;
 }
 /** slider section **/
  #main_slider {
-     padding: 90px 0 30px;
+     padding: 20px 0 30px;
 }
+
+
  .slider_section .container {
      width: 100%;
      max-width: 1920px;
@@ -403,17 +430,18 @@
      letter-spacing: -2px;
 }
  .slider_cont p {
-     font-size: 18px;
-     color: #999;
+     font-size: 20px;
+     color: #fff;
      line-height: normal;
-     font-weight: 300;
+     font-weight: 400;
      margin-top: 15px;
      margin-bottom: 10px;
      padding-right: 30px;
+     text-align: justify;
 }
  #main_slider .carousel-control-prev, #main_slider .carousel-control-next {
-     width: 65px;
-     height: 65px;
+     width: 50px;
+     height: 50px;
      background: #e1e0e0;
      opacity: 1;
      font-size: 30px;
@@ -443,9 +471,10 @@
      margin-top: 20px;
 }
  .main_bt_border:hover, .main_bt_border:focus {
-     background: #e3d105;
-     border-color: #e3d105;
-     color: #222;
+     background: #5DADE2;
+     border-color: #5DADE2;
+     color: #0013F9;
+     font-weight: 800;
 }
  .theme_color {
      color: #f8c90d !important;
@@ -538,20 +567,27 @@
 }
 /** about **/
  .about {
-    padding-top: 90px;
+    padding-top: 40px;
 }
  .about .about_box {
     background: #191918;
      padding: 55px 40px;
+     text-align: justify;
 }
- .about .about_box h3 {
+.about_valores{
+    padding: 30px 40px 10px 40px;
+     text-align: justify;
+     color: #fff;
+}
+
+ .about .about_box h3, .about_valores h3{
      font-size: 30px;
      line-height: 28px;
      color: #fff;
      font-weight: 500;
      padding: 0;
 }
- .about .about_box p {
+ .about .about_box p, .about_valores p {
      color: #ffff;
      font-size: 17px;
      line-height: 28px;
@@ -564,19 +600,78 @@
      line-height: 29px;
 }
  .about .about_box a:hover {
-     color: #e7bb0b;
+     
+     color: #58D68D;
+     font-weight: 500;
+     border-bottom: 1px solid;
 }
  .about .about_img {
-     height: 100%;
-     background: #d8b00f;
+     height: auto;
+     background: #00582b;
      margin-top: 90px;
 }
  .about .about_img figure {
      margin: 0;
      margin-right: 0px;
-     padding: 92px 0px 0px 60px;
+     padding: 50px 0px 0px 50px;
      margin-right: -64px;
 }
+.about_valores {
+
+}
+#lista2 {
+    counter-reset: li; 
+    list-style: none; 
+    list-style: decimal; 
+    font: 15px 'trebuchet MS', 'lucida sans';
+    padding: 0;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+}
+
+#lista2 ol {
+    margin: 0 0 0 2em; 
+}
+
+#lista2 li{
+    position: relative;
+    display: block;
+    padding: .4em .4em .4em 2em;
+    *padding: .4em;
+    margin: .5em 0;
+    background: rgba(0, 0, 0, .6);
+    color: #fff;
+    text-decoration: none;
+    border-radius: .3em;
+    transition: all .3s ease-out;   
+}
+
+#lista2 li:hover{
+    background: #eee;
+    color: #000;
+}
+
+#lista2 li:hover:before{
+    transform: rotate(360deg);  
+}
+
+#lista2 li:before{
+    content: counter(li);
+    counter-increment: li;
+    position: absolute; 
+    left: -1.3em;
+    top: 50%;
+    margin-top: -1.3em;
+    background: #1ABC9C  ;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    border: .3em solid #fff;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 2em;
+    transition: all .3s ease-out;
+}
+
 /** end about **/
 /** blog **/
  .blog {
@@ -584,7 +679,7 @@
 }
  .title {
     text-align: center;
-     padding-bottom: 60px;
+     padding-bottom: 20px;
 }
  .title h2 {
     font-size: 45px;
@@ -644,13 +739,13 @@
 /** end blog **/
 /** Our Client **/
  .Client {
-     padding-top:90px;
+     padding-top:30px;
 }
  .Client .title h2 {
      font-size: 45px;
      font-weight: 500;
      line-height: 40px;
-     color: #191918;
+     
      padding: 20px 0px;
      padding-bottom: 0px;
 }
@@ -658,7 +753,7 @@
      background: #212020;
      border-radius: 20px;
      text-align: center;
-     padding: 65px 50px;
+     padding: 20px 50px;
 }
  .Client .Client_box h3 {
      color: #fff;
@@ -680,9 +775,8 @@
 /** end Our Client **/
 /*--------------------------------------------------------------------- footer ---------------------------------------------------------------------*/
  .footer {
-     background: #d8b00f;
-     padding-top:90px;
-     margin-top: 90px;
+     background: #000;
+     margin-top: 30px;
 }
  .footer h2 {
      color: #000;
@@ -738,11 +832,11 @@
      padding-right: 25px;
 }
  .footer_logo {
-     margin-top: 40px;
+     margin-top: 10px;
      text-align: center;
      border-bottom: #ddd solid 1px;
-     padding-bottom: 15px;
-     margin-bottom: 15px;
+     padding-bottom: 5px;
+     margin-bottom: 5px;
 }
  ul.lik {
     text-align: center;
@@ -752,21 +846,25 @@
     display: inline-block;
 }
  ul.lik li a {
-     color: #292323;
+     color: #fff;
      font-size: 17px;
      line-height: 27px;
      padding: 0px 25px;
      font-weight: 500;
 }
  ul.lik li a:hover {
-     color: #fff;
+     color: #4d942c;
+     font-weight: 700;
+     border-color: #e3d105;
+     border-bottom: 5px solid #4d942c ;
+      transition: 0.1s all ease-in-out;
 }
  ul.lik li.active a {
     color: #fff;
 }
  .new {
     text-align: center;
-     margin-top: 40px;
+     margin-top: 10px;
 }
  .new h3 {
     color: #fff;
@@ -806,12 +904,11 @@
 }
  .copyright {
     background: #fff;
-     margin-top: 90px;
+     margin-top: 20px;
 }
  .copyright p {
     color: #000;
      text-align: center;
-     padding: 25px 0px;
      font-size: 17px;
 }
  .copyright a:hover {
@@ -940,7 +1037,7 @@
 }
 /*--------------------------------------------------------------------- ener page css ---------------------------------------------------------------------*/
  .bg_bg {
-    background: url(../images/bg.jpg);
+    background: url(../images/bg1.jpg);
 }
  .yellow_bg .title h2 {
      font-weight: bold;
@@ -963,7 +1060,7 @@
     margin-top: 180px;
 }
  .blog_page .blog {
-    padding-top: 90px;
+    padding-top: 40px;
 }
  .blog_page .blog span {
     padding-top: 15px;
@@ -973,4 +1070,35 @@
      color: #fff;
      font-weight: 500;
 }
- 
+/* baner */
+.baner{
+    margin-top: 90px;
+    height: 110px;
+}
+/* CUADROS */
+
+.wrap {
+              display: flex;
+            }
+            .box {
+              height: auto;
+              border: 1px solid green;
+              flex: 1;
+              margin-top: 10px;
+              margin-bottom: 10px;
+              margin-left: 5px;
+              margin-right: 5px;
+              text-align: center;
+              line-height: 150px;
+              font-size: 36px;
+            }
+            .box:first-child {
+              order: 1;
+            }
+            .box:nth-child(2) {
+              order: 2;
+            }
+            .box:nth-child(3) {
+              order: 3;
+            }
+         

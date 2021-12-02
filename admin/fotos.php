@@ -102,7 +102,6 @@
     </div>
     <!-- Fin de la tabla  -->
 
-
 </div>
 <!-- /.container-fluid -->
 

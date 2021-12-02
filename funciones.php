@@ -4,6 +4,7 @@ if (!empty($_POST['opcion'])) {
     $opcion = $_POST['opcion'];
     switch ($opcion) {
         case 1:
+        
             
     if (empty($_POST['nombre']) || empty($_POST['correo']) || empty($_POST['clave'])) {
         $alert = ' <script type="text/javascript">
