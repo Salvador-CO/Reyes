@@ -57,7 +57,7 @@
                         <a href="conocenos.php">¡Conocenos!</a>
                     </li>
                     <li>
-                        <a href="blog.html">Blog</a>
+                        <a href="blog/blog.php">Blog</a>s
                     </li>
                     <li>
                         <a href="blanco.php">!Blanco</a>
@@ -88,7 +88,7 @@
                                     <a href="conocenos.php"><img  src="assets/images/conocenos.png" alt="#">!Conocenos¡</a>
                                 </li>
                                 <li class="dinone menubtn" >
-                                    <a href="#"><img style="position: relative;top: -2px;" src="assets/images/blog.png" alt="#">Blog</a>
+                                    <a href="blog/blog.php"><img style="position: relative;top: -2px;" src="assets/images/blog.png" alt="#">Blog</a>
                                 </li>
                                 <li class="button_user">
                                     <a class="button " href="login.php">Ingresa</a>
