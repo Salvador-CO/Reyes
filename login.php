@@ -52,26 +52,20 @@
         class="row"
      -->
 
-      <!-- seccion clara -->
-    <div class="bg_bg" style="border: 1px solid;">
-        <br><br><br><br>
-    </div>
-    <!-- fin seccion clara -->
-     <!-- seccion oscura -->
-    <div class="slider_section" style="border: 1px solid;">
-        <div class="container" >
-            <div class="row" >
-                <div class="col-md-12">
-                    <br>
-                    <br>
+    <!-- Page Banner Section Start -->
+    <div class="baner " style="background-image: url(assets/images/t3.jpg);">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center" style="background:rgba(0,0,0,0.4);margin-top: 10px;">
+                    <font size="16" color="#fff"><i>!¡</i></font>
                 </div>
             </div>
         </div>
     </div>
-    <!-- end seccion oscura -->
+    <!-- Page Banner Section End -->
     
     <!-- seccion clara -->
-    <div class="" id="inicioRegistro" style="border: 1px solid;">
+    <div class="" id="inicioRegistro">
         <div class="container">
             <!-- Page Banner Section Start -->
             <div class=" section" style="margin: 0 0 20px;">

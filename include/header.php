@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <!-- site metas -->
-    <title>Spicyo</title>
+    <title>Reyes</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -23,6 +23,8 @@
     <link rel="stylesheet" href="assets/css/responsive.css">
     <!-- awesome fontfamily -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
       <link rel="stylesheet" href="assets/css/login.css">
     <link rel="stylesheet" type="text/css" href="assets/librerias/alertifyjs/css/alertify.css">
     <!--[if lt IE 9]>
@@ -57,7 +59,7 @@
                         <a href="conocenos.php">¡Conocenos!</a>
                     </li>
                     <li>
-                        <a href="blog/blog.php">Blog</a>s
+                        <a href="blog.php">Blog</a>s
                     </li>
                     <li>
                         <a href="blanco.php">!Blanco</a>
@@ -88,7 +90,7 @@
                                     <a href="conocenos.php"><img  src="assets/images/conocenos.png" alt="#">!Conocenos¡</a>
                                 </li>
                                 <li class="dinone menubtn" >
-                                    <a href="blog/blog.php"><img style="position: relative;top: -2px;" src="assets/images/blog.png" alt="#">Blog</a>
+                                    <a href="blog.php"><img style="position: relative;top: -2px;" src="assets/images/blog.png" alt="#">Blog</a>
                                 </li>
                                 <li class="button_user">
                                     <a class="button " href="login.php">Ingresa</a>

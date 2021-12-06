@@ -3,8 +3,9 @@
 
     $sqlimagen ="SELECT * FROM imagenes ";
         $consultaimg = mysqli_query($conexion, $sqlimagen);
+    $sqlredes ="SELECT * FROM redes ";
+        $consultaredes = mysqli_query($conexion, $sqlredes);
     ?>
-    
     <!-- start slider section -->
     <div class="slider_section">
         <div class="container">
@@ -113,7 +114,7 @@
                  </div>
                   <div class="col-xl-5 col-lg-5 col-md-10 col-sm-12 about_img_boxpdnt">
                      <div class="about_img">
-                         <figure><img src="assets/images/about-img.jpg" alt="#/"></figure>
+                         <figure><img src="assets/images/t1.jpg" alt="#/"></figure>
                          <div class="about_valores" >
                          <h3>Nuestros Valores</h3>
                          <ol id="lista2">
@@ -191,22 +192,48 @@
           <div class="container">
             <div class="row">
               <div class="col-md-12">
-                <div class="title">
+                <div class="title redes">
                   <i><img src="assets/images/redes.png" width="50%" alt="#"/ ></i>
                 </div>
               </div>
             </div>
             <div class="row">
-              <div class="col-md-6 offset-md-3">
-                 <div class="Client_box">
+              <div class="col-md-10 offset-md-1">
+                <div class="Client_box">
                    <h3>¡Siguenos en redes!</h3>
-                   <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn’t anything embarrassing hidden in the middle of text.</p>
-                   <i><img src="images/client_icon.png" alt="#"/></i>
-                 </div>
+                   <p></p>
+                   <!-- contenido carrusel que se -->
+                <div class="parents">
+                    <?php if($consultaimg->num_rows === 0) {
+                        //vacio
+                        } else {
+                        while($rowedit = mysqli_fetch_array($consultaredes)){
+                        $nom_red=$rowedit["nom_red"];
+                        $icono = $rowedit["icono"];
+                        $link = $rowedit["link"];
+                            if ($icono=="fas fa-envelope-square") {
+                                $nom_red=$link;
+                                $link ="#";
+                            }
+                        ?>
+                    <div class="child">
+                        <div class="titu">
+
+                            <div id="izquierda" > <a href="<?php echo $link?>" target="_blank"><i class="<?php echo $icono?>"></i></div> </a>
+                            <div id="derecha"><?php echo $nom_red?></div>
+                           <!--   <font face="Bookman Old Style, Book Antiqua, Garamond" size="4vw">Libro Diario</font>-->
+                        </div>
+                        
+                    </div>
+                    <?php } 
+                    } ?>
+                    <!-- fin del ciclo -->   
+                </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>  
+        </div>
         <!-- end Our Client -->
     </div>
 

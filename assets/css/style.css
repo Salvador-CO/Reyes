@@ -1101,4 +1101,72 @@
             .box:nth-child(3) {
               order: 3;
             }
-         
+/* cuadros 2 */
+  
+        .parents{ height: auto; margin: auto;
+            display: flex;  justify-content: space-around;
+            flex-wrap: wrap; transition: all 0.2 linear;
+            margin: 0; padding:0; box-sizing: border-box;
+            
+            align-items: center;
+            align-content: center;
+
+        }
+        .child{
+            align-items: center;
+            align-content: center;
+            height: auto;
+            background: #808080;
+            box-shadow: 0 0 20px #089125;
+            flex:1 1 250px;
+            /*      top right bottom left  */
+            margin: 10px 15px 20px 10px;
+            border-radius: 8em 0 8em 0;
+        }
+
+        .titu{
+            align-content: center;
+            align-items: center;
+            color: #fff;
+            border-radius: 1.5em;
+
+        }
+        #izquierda{
+            width: 20%;
+            height: 59px;
+            border-right: 4px double green; 
+            float: left;
+            border-radius: 8em 0 0 0;
+            text-align: right;
+        }
+        #derecha{
+            width: 79%;
+            height: 59px;
+            float: left;
+            padding-top: 15px;
+            border-radius: 0 0 8em 0;
+            
+            font-size: 20px;
+        }
+
+        #izquierda i {
+            text-align: right;
+            padding: 10px 5px 0 0;
+            font-size: 3.2em;
+            color: rgba(222, 222, 222, 0.54);
+        }
+
+        #izquierda i:hover{
+            color: red;
+        }
+
+        .footeredes{
+            background: #17202A;
+            bottom: 0;
+            width: 100%;
+            height: 30px;
+            color: white;
+            border-radius: 0 0 1.5em  1.5em;
+            
+        }
+        
