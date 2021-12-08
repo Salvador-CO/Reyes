@@ -7,9 +7,7 @@ if (empty($_SESSION['active'])) {
     $correo = $_SESSION['correo'];
     $tipo = $_SESSION['tipo'];
     $contra =$_SESSION['contra'];
-?>
-<?php require_once "../conexion.php"; ?>
-
+    require_once "../conexion.php"; ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -21,7 +19,7 @@ if (empty($_SESSION['active'])) {
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Administrador</title>
+    <title>Panel administrador</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -31,8 +29,16 @@ if (empty($_SESSION['active'])) {
 
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="css/estilos.css" rel="stylesheet">
+
     <!-- Custom styles for this page -->
     <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="librerias/alertifyjs/css/alertify.css">
+    <link rel="stylesheet" type="text/css" href="librerias/alertifyjs/css/themes/default.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+    <script src="librerias/alertifyjs/alertify.js"></script>
 
 </head>
 
@@ -75,9 +81,8 @@ if (empty($_SESSION['active'])) {
                 <div id="collapseone" class="collapse" aria-labelledby="headingone" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Paginas sobre usuarios</h6>
-                        <a class="collapse-item" href="#">Registrados</a>
-                        <a class="collapse-item" href="#">Perfiles</a>
-                        <a class="collapse-item" href="#">Preguntas</a>
+                        <a class="collapse-item" href="colaboradores.php">Colaboradores</a>
+                        <a class="collapse-item" href="#">Usuarios</a>
                     </div>
                 </div>
             </li>
@@ -137,6 +142,7 @@ if (empty($_SESSION['active'])) {
                         <a class="collapse-item" href="#">Perfil</a>
                         <a class="collapse-item" href="#">Empresa</a>
                         <a class="collapse-item" href="redes.php">Redes sociales</a>
+                        <a class="collapse-item" href="#">Preguntas</a>
                     </div>
                 </div>
             </li>

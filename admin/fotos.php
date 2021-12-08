@@ -1,4 +1,24 @@
-<?php include_once "includes/header.php"; ?>
+<?php 
+    include_once "includes/header.php";
+    $permiso = "imagenes";
+    $sqlper = mysqli_query($conexion, 
+      "SELECT `estado` FROM `detalle_permisos` WHERE `nom_permiso`='$permiso' && `id_usuario` = '$id'");
+    $per = $sqlper->fetch_assoc();
+    if(isset($per['estado']) && $per['estado']=='no' && $id != 1 ){
+        ?>
+        <script type="text/javascript">
+          alertify.alert().set({'startMaximized':true, 'message':'<center><b><font size="7" color="red"> Sin permiso para esta seccion</font></b><br><img src="img/alto.png" width="30%" alt=""></center>',
+          'onok': function(){ window.location.href = "index.php"; }}).show();
+        </script>
+        <?php 
+    }
+
+?>
+
+
+
+
+
 <link rel="stylesheet" type="text/css" href="css/formulario.css">
 <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">

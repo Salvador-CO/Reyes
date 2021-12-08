@@ -1,6 +1,6 @@
 <?php 
     include_once "includes/header.php";
-    $permiso = "redes sociales";
+    $permiso = "colaboradores"; //cambiar el nombre
     $sqlper = mysqli_query($conexion, 
       "SELECT `estado` FROM `detalle_permisos` WHERE `nom_permiso`='$permiso' && `id_usuario` = '$id'");
     $per = $sqlper->fetch_assoc();
@@ -20,25 +20,26 @@
 
 <!-- Contenido de la página de inicio -->
 <div class="container-fluid">
+
     <center>
         <!-- Page Heading -->
-        <h1 class="h3 mb-4 text-gray-800">Nuestras redes sociales</h1>
+        <h1 class="h3 mb-4 text-gray-800">Colaboradores</h1>
         <!-- Button trigger modal -->
         <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">
-          Agregar nueva red
+          Agregar nuevo colaborador
         </button>
         <br><br>
-         
     </center>
+
      <!-- tabla -->
     <div class="card shadow mb-4">
         <div class="card-header py-3">
-            <h6 class="m-0 font-weight-bold text-primary">Redes sociales</h6>
+            <h6 class="m-0 font-weight-bold text-primary">Colaboradores</h6>
         </div>
         <div class="card-body">
             <div class="table-responsive">
                 <?php
-                $sql1 ="SELECT * FROM redes ";
+                $sql1 ="SELECT * FROM usuarios ";
                 $consultap = mysqli_query($conexion, $sql1);
                 if($consultap->num_rows === 0) {
                 ?>
@@ -53,28 +54,32 @@
                             <th scope="col">Nombre Red</th>
                             <th scope="col">Link</th>
                             <th scope="col">Icono</th>
-                            <th></th>
+                            <th>Acciones</th>
                         </tr>
                     </thead>
                     <tbody>
                         <?php
                         $contador=0;
                         while($rowedit = mysqli_fetch_array($consultap)){
-                        $idvr=$rowedit["id"];
-                        $nomred = $rowedit["nom_red"];
-                        $link = $rowedit["link"];
-                        $icono = $rowedit["icono"];
+                        $idus=$rowedit["id_us"];
+                        $nomus = $rowedit["nom_us"];
+                        $correous = $rowedit["correo"];
+                        $claveus = $rowedit["clave"];
+                        $tipous = $rowedit["tipo"];
                         $contador++;
                         ?>    
                         <tr >
                         <td><?php echo $contador; ?></td>
-                        <td><?php echo $nomred; ?></td>
-                        <td><?php echo $link; ?></td>
-                        <td><center><i style="font-size: 36px;" class="<?php echo $icono; ?>"></i></center></td>
+                        <td><?php echo $nomus; ?></td>
+                        <td><?php echo $correous; ?></td>
+                        <td><?php echo $claveus; ?></td>
                         <td>
                         <!-- onsubmit="return agregarProducto();" 
                         class="btn btn-danger"><i class='fas fa-trash-alt'></i>
                         -->
+
+                        <a href="rol.php?id=<?php echo $idus; ?>" class="btn btn-warning"><i class='fas fa-key'></i></a>
+
                         <a class="btn btn-danger btn-circle" href="control/eliminarred.php?idred=<?php echo $idvr?>"  onclick="return confirm('¿Estás seguro de eliminar esta red?');" ><i class='fas fa-trash-alt'></i></a>
                         </td>
                         </tr>
