@@ -82,7 +82,7 @@ if (empty($_SESSION['active'])) {
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Paginas sobre usuarios</h6>
                         <a class="collapse-item" href="colaboradores.php">Colaboradores</a>
-                        <a class="collapse-item" href="#">Usuarios</a>
+                        <a class="collapse-item" href="clientes.php">Clientes</a>
                     </div>
                 </div>
             </li>
@@ -142,7 +142,7 @@ if (empty($_SESSION['active'])) {
                         <a class="collapse-item" href="#">Perfil</a>
                         <a class="collapse-item" href="#">Empresa</a>
                         <a class="collapse-item" href="redes.php">Redes sociales</a>
-                        <a class="collapse-item" href="#">Preguntas</a>
+                        <a class="collapse-item" href="preguntas.php">Preguntas</a>
                     </div>
                 </div>
             </li>

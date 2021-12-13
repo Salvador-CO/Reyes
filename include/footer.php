@@ -50,6 +50,7 @@
      <script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
      <script src="assets/js/login.js"></script>
     <script src="assets/librerias/alertifyjs/alertify.js"></script>
+    <script src="assets/js/registro.js"></script>
     
     <script src="assets/js/jquery-3.0.0.min.js"></script>
     <script type="text/javascript">

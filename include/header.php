@@ -94,7 +94,7 @@
                                 </li>
                                 <li class="button_user">
                                     <a class="button " href="login.php">Ingresa</a>
-                                    <a class="button" href="#">Regístrate</a>
+                                    <a class="button" href="registro.php">Regístrate</a>
                                 </li>
                                 
                                 <li>
