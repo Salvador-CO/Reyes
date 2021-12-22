@@ -52,7 +52,7 @@
                             <th scope="col">Usuario</th>
                             <th scope="col">Correo</th>
                             <th scope="col">Contraseña</th>
-                            <th scope="col">Permiso</th>
+                            <th scope="col">Afiliado por</th>
                             <th scope="col">Estado</th>
                             <th>Acciones</th>
                         </tr>
@@ -65,12 +65,19 @@
                         $nomus = $rowedit["nom_us"];
                         $correous = $rowedit["correo"];
                         $claveus = $rowedit["clave"];
-                        $per = $rowedit["permiso"];
-                        $es = $rowedit["estado"];
+                        $per = $rowedit["afiliado"];
+                        $estado = $rowedit["estado"];
                         $contador++;
+                         if ($estado=="activo") {
+                            $es="<font color='green'><b>Activo</b></font>";
+                          }else if($estado=="inactivo"){
+                            $es="<font color='red'><b>Inactivo</b></font>";
+                          }else{
+                            $es="<font color='#9A7D0A '><b>En espera</b></font>";
+                          }
                         ?>    
                         <tr >
-                        <td><?php echo $contador; ?></td>
+                        <td><?php echo $idus; ?></td>
                         <td><?php echo $nomus; ?></td>
                         <td><?php echo $correous; ?></td>
                         <td><?php echo $claveus; ?></td>
@@ -80,9 +87,10 @@
                         <!-- onsubmit="return agregarProducto();" 
                         class="btn btn-danger"><i class='fas fa-trash-alt'></i>
                         -->
-                        <a href=" " class="btn btn-info"><i class='fas fa-key'></i></a>
+                        <a href="usRespuesta.php?idus=<?php echo $idus?>" class="btn btn-info btn-circle"><i class="fas fa-envelope-open-text fa-lg" title="Respuestas"></i> </a>
  
                         <a class="btn btn-danger btn-circle" href=" "  onclick="return confirm('¿Estás seguro de eliminar esta red?');" ><i class='fas fa-trash-alt'></i></a>
+
 
 
                         </td>

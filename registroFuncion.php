@@ -1,16 +1,19 @@
 <?php 
 	require_once "conexion.php";
 		
-		if (!empty($_POST["nomUs"]) && !empty($_POST["correo"]) && !empty($_POST["clave"]) && !empty($_POST["clave2"])) {
+		if (!empty($_POST["nomUs"]) && !empty($_POST["correo"]) && !empty($_POST["clave"])) {
 			
 			$nomUs=$_POST['nomUs'];
 			$correo=$_POST['correo'];
 			$c1=$_POST['clave'];
-			$c1=$_POST['clave2'];
-			$per="espera";
-			$estado="activo";
+			if (!empty($_POST["asesor"])) {
+				$asesor=$_POST['asesor'];
+			}else{
+				$asesor="libre";
+			}			 
+			$estado="en espera";
 		
-			$query=mysqli_query($conexion,"INSERT INTO `cliente`(`nom_us`, `correo`, `clave`, `permiso`, `estado`) VALUES ('$nomUs','$correo','$c1','$per','$estado')");
+			$query=mysqli_query($conexion,"INSERT INTO `cliente`(`nom_us`, `correo`, `clave`, `afiliado`, `estado`) VALUES ('$nomUs','$correo','$c1','$asesor','$estado')");
 			if ($query) {
 				//parte dos
 	            $sqlIDus = mysqli_query($conexion, "SELECT `nom_us` FROM `cliente` 

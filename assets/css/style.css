@@ -282,14 +282,15 @@
 }
 /*--------------------------------------------------------------------- header ---------------------------------------------------------------------*/
  header {
-     min-height: 90px;
-     background: #00582b;
-     padding: 15px 0;
+     background: #fff;
      position: fixed;
      width: 100%;
      top: 0;
      left: 0;
      z-index: 998;
+     box-shadow: 1px 1px 3px 1px #000;
+
+
 }
  header .container-fluid {
      max-width: 1850px;
@@ -314,8 +315,8 @@
      float: left;
 }
  .right_header_info ul li a {
-     color: #eaeaea;
-     font-weight: 300;
+     color: #000;
+     font-weight: 700;
 }
  .button_user a {
      float: left;
@@ -380,7 +381,7 @@
      
 }
 .menubtn a:hover, .menubtn a:focus, .menubtn a.active {
-     color: #fff;
+     color: #2E86C1;
      font-weight: 700;
      border-color: #e3d105;
      border-bottom: 5px solid #2E86C1 ;
@@ -607,7 +608,7 @@
 }
  .about .about_img {
      height: auto;
-     background: #00582b;
+     background: #191918;
      margin-top: 90px;
 }
  .about .about_img figure {
@@ -775,7 +776,12 @@
 /** end Our Client **/
 /*--------------------------------------------------------------------- footer ---------------------------------------------------------------------*/
  .footer {
-     background: #000;
+      background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url(../images/footer4.jpg);
      margin-top: 30px;
 }
  .footer h2 {
@@ -1072,8 +1078,8 @@
 }
 /* baner */
 .baner{
-    margin-top: 90px;
-    height: 110px;
+    margin-top: 60px;
+    height:  120px;
 }
 /* CUADROS */
 
@@ -1116,7 +1122,7 @@
             align-items: center;
             align-content: center;
             height: auto;
-            background: #808080;
+            background: #fff;
             box-shadow: 0 0 20px #089125;
             flex:1 1 250px;
             /*      top right bottom left  */
@@ -1127,7 +1133,7 @@
         .titu{
             align-content: center;
             align-items: center;
-            color: #fff;
+            color: #000;
             border-radius: 1.5em;
 
         }
@@ -1185,11 +1191,12 @@
             align-content: center;
             height: auto;
             background: #fff;
-            box-shadow: 0 0 20px #089125;
+            box-shadow: 0 0 10px #089125;
             flex:1 1 250px;
             /*      top right bottom left  */
-            margin: 10px 15px 20px 10px;
+            margin: 10px 10px 10px 10px;
             /*  border-radius: 8em 0 8em 0;*/
+            padding: 5px;
         }
 
         .titu_pre{
@@ -1237,3 +1244,150 @@
             border-radius: 0 0 1.5em  1.5em;
             
         }
+/* toltip */
+
+.tooltip_pre {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip_pre .tooltiptext_pre {
+  visibility: hidden;
+  width: 280px;
+  background-color: black;
+  color: #fff;
+  text-align: justify;
+  border-radius: 6px;
+  padding: 10px;
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 110%;
+}
+
+.tooltip_pre .tooltiptext_pre::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent black transparent transparent;
+}
+.tooltip_pre:hover .tooltiptext_pre {
+  visibility: visible;
+}
+/* nosotros */
+.box2 {
+    width: 100%;
+    height:auto;
+    background:#FFF;
+    border-radius: 1em;
+     
+    
+}
+ 
+.primer{
+    width: 50%;
+    align-content: center;
+    align-items: center;
+            border-radius: 2em 2em 1em 1em;
+    
+
+}
+/* efecto 3 */
+.efecto3
+{
+    position:relative;       
+    -webkit-box-shadow:0 0px 4px #777, 0 0 20px #fff inset;
+    -moz-box-shadow:0 0px 4px #777, 0 0 20px #fff inset;
+    box-shadow:0 0px 4px #777, 0 0 20px #fff inset;
+
+}
+.efecto3:before, .efecto3:after
+{
+    /* no aplica contenidos */
+    content:"";
+    position:absolute; 
+    /* posiciona la sombra por detras de la caja */
+    z-index:-1;
+    /* aplica una sombra centrada con un gris oscuro y 20px de difuminado */
+    -webkit-box-shadow:0 0 20px #777;
+    -moz-box-shadow:0 0 20px #777;
+    box-shadow:0 0 20px #fff;
+    /* centra verticalmente y separa la sombra de los bordes izquierdo y derecho */
+    top:0;
+    bottom:0;
+    left:10px;
+    right:10px;
+    /* redondea las esquinas de la sombra */
+    -moz-border-radius:100px / 10px;
+    border-radius:100px / 10px;
+
+} 
+
+.dentro{
+     
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 1em;
+
+}
+/* cuadros nosotros */
+ .parents_n{ height: auto; margin: auto;
+            display: flex;  justify-content: space-around;
+            flex-wrap: wrap; transition: all 0.2 linear;
+            margin: 0; padding:0; box-sizing: border-box;
+            padding-top: 15px;
+            align-items: center;
+            align-content: center;
+    border-radius: 1em;
+
+
+        }
+        .child_n{
+            align-items: center;
+            align-content: center;
+            height: auto;
+            background: #fff;
+            flex:1 1 250px;
+            box-shadow: 0 0 20px #000;
+
+            /*      top right bottom left  */
+            margin: 10px 10px 10px 10px;
+            /*  border-radius: 8em 0 8em 0;*/
+            border-radius: 3em 3em 1em 1em;
+
+             
+        }
+
+
+        .titu_n{
+             background:rgba(18, 191, 23,0.3);
+             border-bottom: 1px double #024104;
+            align-content: center;
+            align-items: center;
+            border-radius: 1em 1em 0 0;
+            color: #024104;
+  text-align: center;
+  font-weight: 700;
+  font: italic bold 35px Georgia, Serif;
+  text-shadow: -4px 3px 0 #34d16e ;
+        }
+
+        .box2 p{
+            color: #000;
+            text-align: justify;
+         padding: 1em 3em 1.3em 3em;
+        }
+.t{
+    color: #000;
+    text-align: justify;
+    margin: 1.5em 3em 1em 3em;
+    font-size: 1.2em;
+}

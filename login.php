@@ -53,11 +53,11 @@
      -->
 
     <!-- Page Banner Section Start -->
-    <div class="baner " style="background-image: url(assets/images/t3.jpg);">
+    <div class="baner " style="background-image: url(assets/images/footer2.jpg); height: 78px;">
         <div class="container">
             <div class="row">
-                <div class="col text-center" style="background:rgba(0,0,0,0.4);margin-top: 10px;">
-                    <font size="16" color="#fff"><i>!¡</i></font>
+                <div class="col text-center" style="background:rgba(0,0,0,0.4);margin-top: 10px;height: 68px;">
+                    <font size="6" color="#fff"><i>Inicia sesion y disfruta</i></font>
                 </div>
             </div>
         </div>
@@ -68,7 +68,6 @@
     <div class="" id="inicioRegistro">
         <div class="container">
             <!-- Page Banner Section Start -->
-            <div class=" section" style="margin: 0 0 20px;">
                 <div >
                     <div class="contenedor__todo">
                         <div class="caja__trasera">
@@ -93,31 +92,25 @@
                                 <input type="password" placeholder="Contraseña" id="clave" name="clave" required >
                                 
                                 <button>Entrar</button>
-                                <br>
+                               
                                 <?php echo isset($alert) ? $alert : ''; ?>
 
                             </form>
                            
 
                             <!--Register-->
-                            <form method="post" onsubmit="return registro();" autocomplete="off" class="formulario__register" >
-                                <h2>Regístrarse</h2>
-                                <span id="resf"></span>
-
-                                <input type="text" placeholder="Nombre completo" name="nombre" id="nombre">
-
-                                <input type="email" placeholder="Correo Electronico" name="correo" id="correo" required>
-                               
-                                <input type="password" placeholder="Contraseña" name="claver" id="claver">
+                             
+                            <form  action="registro.php" method="post" class="formulario__register" >
+                                Completa una serie de pasos que se mostraran a continuación 
+                                 <br>
                                 <center>
-                                <button>!Registrarte¡</button>
-                                </center>
+                                <button>Entrar</button></center>
+                                
 
                             </form>
                         </div>
                     </div>
                 </div>
-            </div><!-- Page Banner Section End -->
         </div>
     </div>
     <!-- fin seccion clara -->

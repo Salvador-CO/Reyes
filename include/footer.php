@@ -4,9 +4,8 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="footer_logo">
-                          <a href="index.html"><img src="assets/images/iconoB.png" alt="logo" /></a>
-                        </div>
+                         <br>
+                         <br>
                     </div>
                     <div class="col-md-12">
                         <ul class="lik">
@@ -18,20 +17,15 @@
                             <li> <a href="contact.html">Registro</a></li>
                         </ul>
                     </div>
-                    <div class="col-12">
-                        <div class="new">
-                            <h3>Informes</h3>
-                            <form class="newtetter">
-                                <input class="tetter" placeholder="Tu correo electronico" type="email" name="Your email" required>
-                                <button class="submit">Solicitar</button>
-                            </form>
-                        </div>
+                    <div class="col-md-12">
+                         <br>
+                         <br>
                     </div>
                 </div>
             </div>
             <div class="copyright">
                 <div class="container">
-                    <p>© 2021 Todos los derechos. Diseñado por<a href="#"> ---</a></p>
+                    <p>© 2021 Todos los derechos.</p>
                 </div>
             </div>
         </div>
@@ -51,6 +45,7 @@
      <script src="assets/js/login.js"></script>
     <script src="assets/librerias/alertifyjs/alertify.js"></script>
     <script src="assets/js/registro.js"></script>
+    
     
     <script src="assets/js/jquery-3.0.0.min.js"></script>
     <script type="text/javascript">

@@ -60,3 +60,36 @@ input:checked[type="checkbox"]:before{
     left: 30px;
 }
 /* fin de roles permiso */
+
+
+/* preguntas cuadros*/
+    .parents{ height: auto; margin: auto;
+            display: flex;  justify-content: space-around;
+            flex-wrap: wrap; transition: all 0.2 linear;
+            margin: 0; padding:0; box-sizing: border-box;
+            
+            align-items: center;
+            align-content: center;
+
+        }
+        .child{
+            align-items: center;
+            align-content: center;
+            height: auto;
+            background: #fff;
+            box-shadow: 0 0 10px #089125;
+            flex:1 1 250px;
+            /*      top right bottom left  */
+            margin: 5px 10px 20px 10px;
+            /*  border-radius: 8em 0 8em 0;*/
+        }
+
+        .titu{
+          text-align: center;
+            align-content: center;
+            align-items: center;
+            color: #000;
+            border-radius: 1.5em;
+
+        }
+        

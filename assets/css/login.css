@@ -3,10 +3,10 @@
 #inicioRegistro{
     width: 100%;
     border-top: 1px solid rgba(0, 131, 2, 0.1);
-    background-image: url(../images/industria.jpg);
+    background-image: url(../images/fondo2.jpg);
 }
 .contenedor__todo{
-    width: 110%;
+    width: 100%;
     max-width: 800px;
     margin: auto;
     height: 550px;

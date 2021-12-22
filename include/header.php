@@ -34,10 +34,7 @@
 <!-- body -->
 
 <body class="main-layout blog_page">
-    <!-- loader  -->
-    <div class="loader_bg">
-        <div class="loader"><img src="assets/images/cargando3.gif" alt="" /></div>
-    </div>
+    
 
     <div class="wrapper">
     <!-- end loader -->
@@ -84,13 +81,13 @@
                         <div class="right_header_info">
                             <ul >
                                 <li class="dinone menubtn" > 
-                                    <a href="index.php"><img src="assets/images/home2.jpg" alt="#">Inicio </a>
+                                    <a href="index.php"><i class="fas fa-home fa-lg "></i> Inicio </a>
                                 </li>
                                 <li class="dinone menubtn" >
-                                    <a href="conocenos.php"><img  src="assets/images/conocenos.png" alt="#">!Conocenos¡</a>
+                                    <a href="conocenos.php"><i class="far fa-id-card fa-lg"></i>  !Conocenos¡</a>
                                 </li>
                                 <li class="dinone menubtn" >
-                                    <a href="blog.php"><img style="position: relative;top: -2px;" src="assets/images/blog.png" alt="#">Blog</a>
+                                    <a href="blog.php"><i class="fas fa-blog fa-lg"></i>  Blog</a>
                                 </li>
                                 <li class="button_user">
                                     <a class="button " href="login.php">Ingresa</a>
@@ -99,8 +96,7 @@
                                 
                                 <li>
                                     <button type="button" id="sidebarCollapse">
-                                        <img src="assets/images/menu_icon.png" alt="#">
-                                    </button>
+                                        <i class="fa fa-bars fa-2x"></i>                                    </button>
                                 </li>
                             </ul>
                         </div>

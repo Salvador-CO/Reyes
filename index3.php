@@ -1,36 +1,84 @@
     <?php require_once "conexion.php";
     include_once "include/header.php"; 
 
-    $sqlimagen ="SELECT * FROM imagenes WHERE estado = '1' && uso IN ('slider', 'ambos')";
+    $sqlimagen ="SELECT * FROM imagenes ";
         $consultaimg = mysqli_query($conexion, $sqlimagen);
     $sqlredes ="SELECT * FROM redes ";
         $consultaredes = mysqli_query($conexion, $sqlredes);
     ?>
     <!-- start slider section -->
-    <link rel="stylesheet" href="assets/css/flexslider.css">
-    <br> 
-    <div class="flexslider">
-    <ul class="slides">
-      <!-- contenido carrusel que se -->
-      <?php if($consultaimg->num_rows === 0) {
-          //vacio
-          } else {
-          while($rowedit = mysqli_fetch_array($consultaimg)){
-          $descriocion=$rowedit["descripcion"];
-          $ruta = $rowedit["ruta"];
-          ?>
-          <li>
-            <img src="<?php echo $ruta;?> " alt="Sin imagen">
-            <section class="caption" style="background:rgba(0,0,0,0.7);">
-              <h2><?php echo $descriocion; ?></h2>
-            </section>
-          </li>
-      <?php } 
-      } ?>
-      
-      <!-- contenido carrusel -->
-    </ul>
-  </div>
+    <div class="slider_section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="full">
+                        <div id="main_slider" class="carousel vert slide" data-ride="carousel" data-interval="5000">
+                            <div class="carousel-inner">
+                                <!-- contenido carrusel imagen figa -->
+                                <div class="carousel-item active">
+                                    <div class="row">
+                                        <div class="col-md-5">
+                                            <div class="slider_cont">
+                                                <p >Quieres conocer nuestros increíbles productos, ofertas, promociones y regalos que tenemos para ti  ¡no lo pienses más!, <br> <strong>¡suscríbete ahora mismo!</strong>.</p>
+                                                <a class="main_bt_border" href="#">SUSCRIBETE</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <div class="slider_image full text_align_center">
+                                                <div class="SCO">
+                                                  <img class="img-responsive fijot" src="img/1.jpg" alt="Sin imagen" />
+                                                  <div class="texto-encima">!Forma parte de nuestro equipo¡</div>
+                                                  
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- contenido carrusel que se -->
+                                <?php if($consultaimg->num_rows === 0) {
+                                    //vacio
+                                    } else {
+                                    while($rowedit = mysqli_fetch_array($consultaimg)){
+                                    $titulo ="titulo";
+                                    $descriocion=$rowedit["descripcion"];
+                                    $ruta = $rowedit["ruta"];
+                                    ?>
+                                    <div class="carousel-item ">
+                                        <div class="row">
+                                            <div class="col-md-5">
+                                                <div class="slider_cont">
+                                                    <p> <?php echo $descriocion;?> </p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-7">
+                                            <div class="slider_image full text_align_center">
+                                                <div class="SCO">
+                                                  <img class="img-responsive fijot" src="<?php echo $ruta;?> " alt="Sin imagen" />
+                                                  <div class="texto-encima"><?php echo $titulo; ?></div>
+                                                  
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <?php } 
+                                } ?>
+                                
+                                <!-- contenido carrusel -->
+
+                            </div>
+                            <a class="carousel-control-prev" href="#main_slider" role="button" data-slide="prev">
+                                <i class="fa fa-angle-up"></i>
+                            </a>
+                            <a class="carousel-control-next" href="#main_slider" role="button" data-slide="next">
+                                <i class="fa fa-angle-down"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- end slider section -->
 
     <!-- section -->
@@ -70,11 +118,12 @@
                          <div class="about_valores" >
                          <h3>Nuestros Valores</h3>
                          <ol id="lista2">
-                            <li>Honestidad</li>
-                            <li>Calidad</li>
-                            <li>Puntualidad</li>
-                            <li>Trabajo en equipo</li>
-                            <li>Orientación al cliente</li> 
+                            <li>List item</li>
+                            <li>List item</li>
+                            <li>List item
+                            </li>
+                            <li>List item</li>
+                            <li>List item</li> 
                         </ol>
                      </div>
                      </div>
@@ -166,43 +215,11 @@
                                 $nom_red=$link;
                                 $link ="#";
                             }
-                            $color="#000";
-                            if ($icono=="fab fa-facebook") {
-                                $color="#3b5998";
-                            }
-                            if ($icono=="fab fa-instagram") {
-                                $color="rgb(131,58,180)";
-                            }
-                            if ($icono=="fab fa-youtube") {
-                                $color="#c4302b";
-                            }
-                            if ($icono=="fab fa-twitter-square") {
-                                $color="#00acee";
-                            }
-                            if ($icono=="fab fa-whatsapp") {
-                                $color="#00bb2d";
-                            }
-                            if ($icono=="fab fa-linkedin") {
-                                $color="#0e76a8";
-                            }
-                            if ($icono=="fab fa-snapchat") {
-                                $color="#FFFC00";
-                            }
-                            if ($icono=="fab fa-skype") {
-                                $color="#00aff0";
-                            }
-                            if ($icono=="fab fa-pinterest") {
-                                $color="#c8232c";
-                            }
-                            if ($icono=="fab fa-telegram") {
-                                $color="#4995be";
-                            }
-
                         ?>
                     <div class="child">
-                        <div class="titu" style="color: <?php echo $color?>;">
+                        <div class="titu">
 
-                            <div id="izquierda" > <a href="<?php echo $link?>" target="_blank"><i style="color: <?php echo $color?>;" class="<?php echo $icono?>"></i></div> </a>
+                            <div id="izquierda" > <a href="<?php echo $link?>" target="_blank"><i class="<?php echo $icono?>"></i></div> </a>
                             <div id="derecha"><?php echo $nom_red?></div>
                            <!--   <font face="Bookman Old Style, Book Antiqua, Garamond" size="4vw">Libro Diario</font>-->
                         </div>
@@ -220,7 +237,4 @@
         <!-- end Our Client -->
     </div>
 
-
     <?php include_once "include/footer.php"; ?>
-<script src="assets/js/jquery.flexslider.js"></script>
-    <script src="assets/js/slider.js"></script>

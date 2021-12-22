@@ -5,7 +5,7 @@
 }
 
 :root {
-    --color-bg-1: #008080;
+    --color-bg-1: #4a6060;
     --color-bg-2: #FEF9E7;
     --color-btn: #2196F3;
 
@@ -29,7 +29,7 @@
 .form-register {
     padding: 20px 15px;
     width: 100%;
-    max-width: 400px;
+    max-width: 800px;
 }
 
 /* Header del formulario */
