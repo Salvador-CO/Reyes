@@ -8,6 +8,7 @@
     ?>
     <!-- start slider section -->
     <link rel="stylesheet" href="assets/css/flexslider.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/eventos.css">
     <br> 
     <div class="flexslider">
     <ul class="slides">
@@ -84,59 +85,109 @@
         </div>
         <!-- end about -->
 
-        <!-- blog -->
+    <!-- blog -->
         <div class="blog">
           <div class="container">
-            <div class="row">
-                 <div class="col-md-12">
-                     <div class="title">
-                        <i><img src="assets/images/nosotros.png" alt="#"/></i>
-                        <h2>Nuestro Blog</h2>
-                        <span>Swhen looking at its layout. The point of using Lorem
-                        </span>
+                <div class="row">
+                    <div class="col-md-12">
+                         <div class="title">
+                            <i><img src="assets/images/nosotros.png" alt="#"/></i>
+                            <h2>Nuestro Blog</h2>
+                         </div>
+                    </div>
+                </div>
 
-                     </div>
-                  </div>
-               </div>
+                <div class="card-group">
+                   <div class="container">
+                      <div class="row mt-4">
+                         <?php 
+                            $sql1 ="SELECT * FROM blog  ORDER BY date DESC LIMIT 3";
+                            $consulta1 = mysqli_query($conexion, $sql1);
+                            while($row = mysqli_fetch_array($consulta1)){
+                        ?>
+                         <div class="col-md-4">
 
-            <div class="row">
-              <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 mar_bottom">
-                <div class="blog_box">
-                  <div class="blog_img_box">
-                    <figure><img src="images/blog_img1.png" alt="#"/>
-                     <span>02 FEB 2019</span>
-                    </figure>
-                  </div>
-                  <h3>Spicy Barger</h3>
-                  <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the </p>
+                            <div class="card">
+                            <img src="blog/<?php echo $row['file'];?>" width="auto" height="auto" >
+                            <div class="card-body">
+                              <h3 class="card-title"><a href="post.php?id=<?php echo $row['id'];?>"><?php echo $row['titulo'];?></a></h3>
+                              <p class="card-text"><?php echo strip_tags(substr($row['contenido'],0,100)); echo "..."; ?></p>
+                              
+                            </div>
+                            <div class="card-footer text-muted d-flex justify-content-between bg-transparent border-top-0">
+                              <div class="views"><?php echo $row['date'];?>
+                              </div>
+                              <div class="stats">
+                                  <a href="post.php?id=<?php echo $row['id'];?>" class="btn btn-info">Leer más...</a>
+                              </div>
+                            </div>
+                          </div><br>
+                         
+                         </div>
+
+                         <?php
+                            }
+                             
+                            ?>
+                      </div>
+                   </div>
                 </div>
-              </div>
-               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 mar_bottom">
-                <div class="blog_box">
-                  <div class="blog_img_box">
-                    <figure><img src="images/blog_img2.png" alt="#"/>
-                     <span>02 FEB 2019</span>
-                    </figure>
-                  </div>
-                  <h3>Egg & Tosh</h3>
-                  <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the </p>
-                </div>
-              </div>
-               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
-                <div class="blog_box">
-                  <div class="blog_img_box">
-                    <figure><img src="images/blog_img3.png" alt="#"/>
-                     <span>02 FEB 2019</span>
-                    </figure>
-                  </div>
-                  <h3>Pizza</h3>
-                  <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the </p>
-                </div>
-              </div>
             </div>
-          </div>
         </div>
         <!-- end blog -->
+
+        <!--Seccion de los eventos-->
+    <div class="row">
+        <div class="col-md-12">
+            <div class="title">
+                <i><img src="assets/images/calendario.png" alt="#" height="63px" width="96px" /></i>
+                <h2>Eventos</h2>
+                </div>
+        </div>
+    </div>
+    <section class="section services-section" id="services" style="padding-top: 0px;">
+        <div class="container">
+            <div class="row">
+                <?php 
+                    $sql1 ="SELECT * FROM eventos ORDER BY fecha DESC";
+                    $consulta1 = mysqli_query($conexion, $sql1);
+                    while($row = mysqli_fetch_array($consulta1)){
+
+                    $fecha = $row['fecha'];
+                      $numeroDia = date('d', strtotime($fecha));
+                      $dia = date('l', strtotime($fecha));
+                      $mes = date('F', strtotime($fecha));
+                      $anio = date('Y', strtotime($fecha));
+                      $dias_ES = array("Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo");
+                      $dias_EN = array("Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday");
+                      $nombredia = str_replace($dias_EN, $dias_ES, $dia);
+                      $meses_ES = array("Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre");
+                      $meses_EN = array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+                      $nombreMes = str_replace($meses_EN, $meses_ES, $mes);
+                ?>
+                <!-- feaure box -->
+                <div class="col-sm-6 col-lg-4">
+                    <div class="feature-box-1">
+                        <div class="icon">
+                            <?php echo $numeroDia; ?>
+                        </div>
+                        <div class="feature-content">
+                            <h5><?php echo $row['nombre'];  ?></h5>
+                            <p><i class="fa fa-calendar"></i> <span> &nbsp; <?php echo $nombredia." ".$numeroDia." de ".$nombreMes." de ".$anio;?></span> </p>
+                            <p><i class="fa fa-clock-o"></i> <span>&nbsp; <?php echo $row['hora'];?></span></p>
+                            <p><i class="fa fa-map-marker"></i>&nbsp;<?php echo  $row['lugar'];?></span></p>
+                        </div>
+                            <p> &nbsp;<?php  echo strip_tags(substr($row['descripcion'],0,100)); echo "...";?></span></p>
+                        <br>
+                        
+                    </div>
+                </div>
+
+            <?php } ?>
+            </div>
+        </div>
+    </section>
+
 
         <!-- Redes sociales -->
         <div class="Client">

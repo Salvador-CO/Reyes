@@ -38,7 +38,7 @@
                  <div class="col-md-4">
 
                     <div class="card">
-                    <img src="<?php echo $row['file'];?>" width="auto" height="auto" >
+                    <img src="blog/<?php echo $row['file'];?>" width="auto" height="auto" >
                     <div class="card-body">
                       <h3 class="card-title"><a href="post.php?id=<?php echo $row['id'];?>"><?php echo $row['titulo'];?></a></h3>
                       <p class="card-text"><?php echo strip_tags(substr($row['contenido'],0,100)); echo "..."; ?></p>

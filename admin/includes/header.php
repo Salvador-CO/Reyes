@@ -15,6 +15,11 @@ if (empty($_SESSION['active'])) {
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+</head>
+
+<body id="page-top">
+
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -39,11 +44,6 @@ if (empty($_SESSION['active'])) {
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
     <script src="librerias/alertifyjs/alertify.js"></script>
-
-</head>
-
-<body id="page-top">
-
     <!-- Page Wrapper -->
     <div id="wrapper">
 
@@ -117,6 +117,7 @@ if (empty($_SESSION['active'])) {
                         <h6 class="collapse-header">Publicaciones</h6>
                         <a class="collapse-item" href="blog.php">Blog</a>
                         <a class="collapse-item" href="fotos.php">Imagenes</a>
+                        <a class="collapse-item" href="eventos.php">Eventos</a>
                     </div>
                 </div>
             </li>

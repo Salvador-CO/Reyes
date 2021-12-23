@@ -1,13 +1,18 @@
   <?php include_once "include/header.php"; 
     require_once "conexion.php";?>
 
+    <?php
+        $id=$_GET['id'];
+        $sql1 ="SELECT * FROM blog where id=$id";
+        $consulta1 = mysqli_query($conexion, $sql1);
+        while($row = mysqli_fetch_array($consulta1)){
+            
+    ?>
+
 <!-- Page Banner Section Start -->
-    <div class="baner " style="background-image: url(assets/images/baner1.jpg);">
+    <div class="baner " style="background-image: url(blog/<?php echo $row['file'];?>);">
         <div class="container">
             <div class="row">
-                <div class="col text-center" style="background:rgba(0,0,0,0.4);margin-top: 10px;">
-                    <font size="16" color="#fff"><i>Nuestro Blog</i></font>
-                </div>
             </div>
         </div>
     </div>
@@ -16,20 +21,14 @@
         
 
         <!-- end blog -->
-        <?php
-        $id=$_GET['id'];
-        $sql1 ="SELECT * FROM blog where id=$id";
-        $consulta1 = mysqli_query($conexion, $sql1);
-        while($row = mysqli_fetch_array($consulta1)){
-            
-    ?>
+
     <!-- Page Banner Section Start -->
     <div class="page-banner-section section">
         <div class="blog">
           <div class="container">
             <div class="row">
               <div class="col-md-12">
-                 <h1><?php echo $row['titulo'] ?></h1>                
+                             
               </div>
             </div>
           </div>
@@ -45,8 +44,9 @@
 
                 <div class="col-xl-9 col-lg-8 col-12 order-1 order-lg-2 mb-40">
                     <div class="single-blog"> 
+                       <center><h1><?php echo $row['titulo'] ?></h1></center> 
                         <div class="image-wrap" style="align-items: center; display: flex; justify-content: center;">
-                                <img src="<?php echo $row['file'];?>" width="600px" height="400px" align="center">
+                                <img src="blog/<?php echo $row['file'];?>" width="600px" height="400px" align="center">
                         </div>
                         <div class="content">
                             <ul class="meta">
@@ -69,7 +69,10 @@
 
                 <div class="col-xl-3 col-lg-4 col-12 order-2 order-lg-1 mb-40">
                     <div class="sidebar">
-                        <h4 class="sidebar-title">Otras publicaciones</h4>
+                        <div class="shadow p-3 mb-5 bg-white rounded">
+                        <h3 class="sidebar-title">Otras publicaciones</h3>
+                        <br>
+
                         <?php
                             
                             $sql1 ="SELECT * FROM blog ";
@@ -82,9 +85,10 @@
                             <ul class="sidebar-list">
                                 <li><a href="post.php?id=<?php echo $row['id'];?>"><?php echo $row['titulo'] ?></a></li>
                             </ul>
+                            <hr>
                         </div>
                         <?php  } ?>
-                        <hr width="1" size="500"> 
+                        </div>
                     </div>
                 </div>
         </div>

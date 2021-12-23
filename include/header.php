@@ -59,7 +59,7 @@
                         <a href="blog.php">Blog</a>s
                     </li>
                     <li>
-                        <a href="blanco.php">!Blanco</a>
+                        <a href="eventos.php">Eventos</a>
                     </li>
                 </ul>
 
@@ -88,6 +88,9 @@
                                 </li>
                                 <li class="dinone menubtn" >
                                     <a href="blog.php"><i class="fas fa-blog fa-lg"></i>  Blog</a>
+                                </li>
+                                <li class="dinone menubtn" >
+                                    <a href="eventos.php"><i class="fas fa-calendar-alt"></i> Eventos</a>
                                 </li>
                                 <li class="button_user">
                                     <a class="button " href="login.php">Ingresa</a>
