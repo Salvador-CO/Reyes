@@ -26,7 +26,7 @@
    
     <div class="section"   >
         <div class="container" style="color: #000; font-size: 20px;">
-             
+             <form>
                 <div class="form-row align-items-center" >
                     <div class="col-auto">
                       <label  for="inlineFormInput">Ingresa codigo de pedido:</label>
@@ -38,7 +38,7 @@
                       <button type="submit" class="btn btn-outline-info btn-lg ">Buscar <i class="fas fa-search"></i></button>
                     </div>
                 </div>  
-   
+            </form>
                   
              
      
