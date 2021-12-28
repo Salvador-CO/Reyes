@@ -93,8 +93,9 @@
                                     <a href="eventos.php"><i class="fas fa-calendar-alt"></i> Eventos</a>
                                 </li>
                                 <li class="button_user">
-                                    <a class="button " href="login.php">Ingresa</a>
+                                    <a class="boton verde" href="login.php">Ingresa</a>
                                     <a class="button" href="registro.php">Regístrate</a>
+                                    
                                 </li>
                                 
                                 <li>
