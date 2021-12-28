@@ -179,11 +179,26 @@
         <br>
         <center>
         <div class="container" style="border: 1px solid;">
+        	<?php 
+        		if ($es=='activo') {
+        			?>
+        			 
+        			<button type="button" class="btn btn-info btn-lg" onclick="window.location.href = 'clientes.php';">Regresar  <i class="fas fa-backward"></i></button>
 
-        <button type="button" class="btn btn-outline-success btn-lg" onclick="activo('<?php echo $nomUs; ?>')">Permitir <i class="far fa-thumbs-up"></i></button>
+					<button type="button" class="btn btn-outline-danger btn-lg"	onclick="inactivo('<?php echo $nomUs; ?>')">Negar <i class="fas fa-user-times"></i></button>
+        			<?php
+        		} 
+        			?><?php
+        		
+        		if ($es=='inactivo') {
+        			?><button type="button" class="btn btn-outline-success btn-lg" onclick="activo('<?php echo $nomUs; ?>')">Permitir <i class="far fa-thumbs-up"></i></button>
+
         <button type="button" class="btn btn-info btn-lg" onclick="window.location.href = 'clientes.php';">Regresar  <i class="fas fa-backward"></i></button>
-		<button type="button" class="btn btn-outline-danger btn-lg" 
-			onclick="inactivo('<?php echo $nomUs; ?>')">Negar <i class="fas fa-user-times"></i></button>
+				<?php
+        		} 
+    	 
+        	 ?>
+        
 		</div>
 		</center>
     	<!-- Fin de la tabla generales -->

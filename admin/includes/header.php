@@ -97,7 +97,7 @@ if (empty($_SESSION['active'])) {
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Paginas para la tienda</h6>
-                        <a class="collapse-item" href="#">Productos</a>
+                        <a class="collapse-item" href="productos.php">Productos</a>
                         <a class="collapse-item" href="#">Pedidos</a>
                         <a class="collapse-item" href="#">Reportes</a>
                     </div>

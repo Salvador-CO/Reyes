@@ -145,7 +145,7 @@
                 </div>
         </div>
     </div>
-    <section class="section services-section" id="services" style="padding-top: 0px;">
+    <section class="section services-section" id="services" style="padding-top: 0px; padding-bottom: 0; ">
         <div class="container">
             <div class="row">
                 <?php 
@@ -166,8 +166,8 @@
                       $nombreMes = str_replace($meses_EN, $meses_ES, $mes);
                 ?>
                 <!-- feaure box -->
-                <div class="col-sm-6 col-lg-4">
-                    <div class="feature-box-1">
+                <div class="col-sm-6 col-lg-4" >
+                    <div class="feature-box-1" style="background: #fff">
                         <div class="icon">
                             <?php echo $numeroDia; ?>
                         </div>
@@ -193,16 +193,13 @@
         <div class="Client">
           <div class="container">
             <div class="row">
-              <div class="col-md-12">
-                <div class="title redes">
-                  <i><img src="assets/images/redes.png" width="50%" alt="#"/ ></i>
-                </div>
-              </div>
+               
             </div>
             <div class="row">
               <div class="col-md-10 offset-md-1">
-                <div class="Client_box">
-                   <h3>¡Siguenos en redes!</h3>
+                <div  >
+                  <center>
+                   <h1> <font size="7"> ¡Siguenos en redes!</font></h1></center>
                    <p></p>
                    <!-- contenido carrusel que se -->
                 <div class="parents">
@@ -251,11 +248,14 @@
 
                         ?>
                     <div class="child">
-                        <div class="titu" style="color: <?php echo $color?>;">
+                        <div   style="color: <?php echo $color?>;">
 
-                            <div id="izquierda" > <a href="<?php echo $link?>" target="_blank"><i style="color: <?php echo $color?>;" class="<?php echo $icono?>"></i></div> </a>
-                            <div id="derecha"><?php echo $nom_red?></div>
-                           <!--   <font face="Bookman Old Style, Book Antiqua, Garamond" size="4vw">Libro Diario</font>-->
+                            <div id="icono" > 
+                              <a href="<?php echo $link?>" target="_blank" title="<?php echo $nom_red?>">
+                                <i style="color: <?php echo $color?>;" class="<?php echo $icono?>"></i>
+                              
+                              </a>
+                             </div>
                         </div>
                         
                     </div>
@@ -269,6 +269,7 @@
           </div>
         </div>
         <!-- end Our Client -->
+ 
     </div>
 
 

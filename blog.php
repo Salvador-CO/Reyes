@@ -12,10 +12,10 @@
 
     
     <!-- Page Banner Section Start -->
-    <div class="baner " style="background-image: url(assets/images/baner1.jpg);">
+    <div class="baner " style="background-image: url(assets/images/tu.jpg);">
         <div class="container">
             <div class="row">
-                <div class="col text-center" style="background:rgba(0,0,0,0.4);margin-top: 10px;">
+                <div class="col text-center" style="background:rgba(0,0,0,0.5);margin-top: 10px;">
                     <font size="16" color="#fff"><i>!Blog¡</i></font>
                 </div>
             </div>

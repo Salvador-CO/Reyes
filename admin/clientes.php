@@ -87,7 +87,7 @@
                         <!-- onsubmit="return agregarProducto();" 
                         class="btn btn-danger"><i class='fas fa-trash-alt'></i>
                         -->
-                        <a href="usRespuesta.php?idus=<?php echo $idus?>" class="btn btn-info btn-circle"><i class="fas fa-envelope-open-text fa-lg" title="Respuestas"></i> </a>
+                        <a href="usRespuesta.php?idus=<?php echo $idus?>&correo=<?php echo $correous?>&clave=<?php echo $claveus?>" class="btn btn-info btn-circle"><i class="fas fa-envelope-open-text fa-lg" title="Respuestas"></i> </a>
  
                         <a class="btn btn-danger btn-circle" href=" "  onclick="return confirm('¿Estás seguro de eliminar esta red?');" ><i class='fas fa-trash-alt'></i></a>
 

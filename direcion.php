@@ -11,7 +11,7 @@ $tipo = $_SESSION['tipo'];
     if ($tipo==1) {
         header('location: admin/');
     }else{
-        header('location: carrito/index.php');
+        header('location: carro/');
 
     }
 

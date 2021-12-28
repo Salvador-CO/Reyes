@@ -11,7 +11,7 @@
 			}else{
 				$asesor="libre";
 			}			 
-			$estado="en espera";
+			$estado="inactivo";
 		
 			$query=mysqli_query($conexion,"INSERT INTO `cliente`(`nom_us`, `correo`, `clave`, `afiliado`, `estado`) VALUES ('$nomUs','$correo','$c1','$asesor','$estado')");
 			if ($query) {

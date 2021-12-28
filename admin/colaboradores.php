@@ -39,7 +39,7 @@
         <div class="card-body">
             <div class="table-responsive">
                 <?php
-                $sql1 ="SELECT * FROM usuarios ";
+                $sql1 ="SELECT * FROM usuarios where tipo ='1' ";
                 $consultap = mysqli_query($conexion, $sql1);
                 if($consultap->num_rows === 0) {
                 ?>

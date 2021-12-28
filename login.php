@@ -53,11 +53,11 @@
      -->
 
     <!-- Page Banner Section Start -->
-    <div class="baner " style="background-image: url(assets/images/footer2.jpg); height: 78px;">
+    <div class="baner " style="background-image: url(assets/images/); height: 78px;">
         <div class="container">
             <div class="row">
-                <div class="col text-center" style="background:rgba(0,0,0,0.4);margin-top: 10px;height: 68px;">
-                    <font size="6" color="#fff"><i>Inicia sesion y disfruta</i></font>
+                <div class="col text-center" style="height: 78px;">
+                    <font size="7" color="#000"><i>Inicia sesion y disfruta</i></font>
                 </div>
             </div>
         </div>
@@ -73,7 +73,7 @@
                         <div class="caja__trasera">
                             <div class="caja__trasera-login">
                                 <h3>¿Ya tienes una cuenta?</h3>
-                                <p>Inicia sesión para entrar en la página</p>
+                                <p>Inicia sesión para entrar a la tienda</p>
                                 <button id="btn__iniciar-sesion">Iniciar Sesión</button>
                             </div>
                             <div class="caja__trasera-register">
@@ -84,17 +84,20 @@
                         </div>
 
                         <!--Formulario de Login y registro-->
+
                         <div class="contenedor__login-register">
                             <!--Login-->
                             <form action="" method="POST" class="formulario__login">
+                                
+                                  <img src="assets/images/login.png"style="position: absolute;   margin: -40% 0 0 25%; width: 40%;">
                                 <h2>Iniciar Sesión</h2>
                                 <input type="text"  placeholder="Correo Electronico" id="usuario" name="usuario" required>
                                 <input type="password" placeholder="Contraseña" id="clave" name="clave" required >
-                                
+                                <center>
                                 <button>Entrar</button>
                                
                                 <?php echo isset($alert) ? $alert : ''; ?>
-
+                                </center>
                             </form>
                            
 
@@ -104,7 +107,7 @@
                                 Completa una serie de pasos que se mostraran a continuación 
                                  <br>
                                 <center>
-                                <button>Entrar</button></center>
+                                <button>Registrate</button></center>
                                 
 
                             </form>
