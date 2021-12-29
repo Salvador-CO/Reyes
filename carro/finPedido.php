@@ -44,7 +44,7 @@
          <center>
          <a class="btn btn-info" href="pdf/generar.php?codigo=<?php echo $clavePedido?>" ><i class="fas fa-file-pdf"></i> Descargar pdf</a>
          <a href="tienda.php" type="button" class="btn btn-danger"><i class="fas fa-store"></i> ir a la tienda</a>
-         <a href="#" type="button" class="btn btn-success"><i class="fas fa-pager"></i> Cargar Tiket de pago</a>
+         <a href="pagos.php" type="button" class="btn btn-success"><i class="fas fa-pager"></i> Cargar Tiket de pago</a>
 
        </center>
         </div>

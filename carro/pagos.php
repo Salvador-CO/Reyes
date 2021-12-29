@@ -25,8 +25,22 @@
     
    
     <div class="section"   >
-        <div class="container"  >
-            > 
+        <div class="container" style="color: #000; font-size: 20px;">
+             <form>
+                <div class="form-row align-items-center" >
+                    <div class="col-auto">
+                      <label  for="inlineFormInput">Ingresa codigo de pedido:</label>
+                      <input style="border-bottom: medium solid" type="text" class="form-control mb-2" id="inlineFormInput" placeholder="Ingresa codigo">
+                    </div>
+                     
+                    <div class="col-auto" style="margin-top: 45px;">
+
+                      <button type="submit" class="btn btn-outline-info btn-lg ">Buscar <i class="fas fa-search"></i></button>
+                    </div>
+                </div>  
+            </form>
+                  
+             
      
         </div>
     </div>
