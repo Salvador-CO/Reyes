@@ -121,7 +121,7 @@ if (empty($_SESSION['active'])) {
                                     }
                                   ?>
                                 <li class="button_user">
-                                    <a class="button " href="carrito.php"> <i class="fas fa-shopping-cart fa-lg"></i> ( <?php echo $tcarro; ?> )</a>
+                                    <a class="boton verde " href="carrito.php"> <i class="fas fa-shopping-cart fa-lg"></i> ( <?php echo $tcarro; ?> )</a>
                                 </li>
                                 
                                 <li>

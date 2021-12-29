@@ -34,9 +34,90 @@
   </div>
     <!-- end slider section -->
 
-    <!-- section -->
-    
+    <!-- Redes sociales -->
+        <div class="Client">
+          <div class="container">
+            <div class="row">
+               
+            </div>
+            <div class="row">
+              <div class="col-md-10 offset-md-1">
+                <div  >
+                  <center>
+                   <h1> <font size="7"> ¡Siguenos en redes!</font></h1></center>
+                   <p></p>
+                   <!-- contenido carrusel que se -->
+                <div class="parents">
+                    <?php if($consultaimg->num_rows === 0) {
+                        //vacio
+                        } else {
+                        while($rowedit = mysqli_fetch_array($consultaredes)){
+                        $nom_red=$rowedit["nom_red"];
+                        $icono = $rowedit["icono"];
+                        $link = $rowedit["link"];
+                            if ($icono=="fas fa-envelope-square") {
+                                $nom_red=$link;
+                                $link ="#";
+                            }
+                            $color="#000";
+                            if ($icono=="fab fa-facebook") {
+                                $color="#3b5998";
+                            }
+                            if ($icono=="fab fa-instagram") {
+                                $color="rgb(131,58,180)";
+                            }
+                            if ($icono=="fab fa-youtube") {
+                                $color="#c4302b";
+                            }
+                            if ($icono=="fab fa-twitter-square") {
+                                $color="#00acee";
+                            }
+                            if ($icono=="fab fa-whatsapp") {
+                                $color="#00bb2d";
+                            }
+                            if ($icono=="fab fa-linkedin") {
+                                $color="#0e76a8";
+                            }
+                            if ($icono=="fab fa-snapchat") {
+                                $color="#FFFC00";
+                            }
+                            if ($icono=="fab fa-skype") {
+                                $color="#00aff0";
+                            }
+                            if ($icono=="fab fa-pinterest") {
+                                $color="#c8232c";
+                            }
+                            if ($icono=="fab fa-telegram") {
+                                $color="#4995be";
+                            }
 
+                        ?>
+                    <div class="child">
+                        <div   style="color: <?php echo $color?>;">
+
+                            <div id="icono" > 
+                              <a href="<?php echo $link?>" target="_blank" title="<?php echo $nom_red?>">
+                                <i style="color: <?php echo $color?>;" class="<?php echo $icono?>"></i>
+                              
+                              </a>
+                             </div>
+                        </div>
+                        
+                    </div>
+                    <?php } 
+                    } ?>
+                    <!-- fin del ciclo -->   
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end Our Client -->
+
+
+
+    <!-- section -->
     <div class="bg_bg">
         <!-- about -->
         <div class="about">
@@ -189,86 +270,7 @@
     </section>
 
 
-        <!-- Redes sociales -->
-        <div class="Client">
-          <div class="container">
-            <div class="row">
-               
-            </div>
-            <div class="row">
-              <div class="col-md-10 offset-md-1">
-                <div  >
-                  <center>
-                   <h1> <font size="7"> ¡Siguenos en redes!</font></h1></center>
-                   <p></p>
-                   <!-- contenido carrusel que se -->
-                <div class="parents">
-                    <?php if($consultaimg->num_rows === 0) {
-                        //vacio
-                        } else {
-                        while($rowedit = mysqli_fetch_array($consultaredes)){
-                        $nom_red=$rowedit["nom_red"];
-                        $icono = $rowedit["icono"];
-                        $link = $rowedit["link"];
-                            if ($icono=="fas fa-envelope-square") {
-                                $nom_red=$link;
-                                $link ="#";
-                            }
-                            $color="#000";
-                            if ($icono=="fab fa-facebook") {
-                                $color="#3b5998";
-                            }
-                            if ($icono=="fab fa-instagram") {
-                                $color="rgb(131,58,180)";
-                            }
-                            if ($icono=="fab fa-youtube") {
-                                $color="#c4302b";
-                            }
-                            if ($icono=="fab fa-twitter-square") {
-                                $color="#00acee";
-                            }
-                            if ($icono=="fab fa-whatsapp") {
-                                $color="#00bb2d";
-                            }
-                            if ($icono=="fab fa-linkedin") {
-                                $color="#0e76a8";
-                            }
-                            if ($icono=="fab fa-snapchat") {
-                                $color="#FFFC00";
-                            }
-                            if ($icono=="fab fa-skype") {
-                                $color="#00aff0";
-                            }
-                            if ($icono=="fab fa-pinterest") {
-                                $color="#c8232c";
-                            }
-                            if ($icono=="fab fa-telegram") {
-                                $color="#4995be";
-                            }
 
-                        ?>
-                    <div class="child">
-                        <div   style="color: <?php echo $color?>;">
-
-                            <div id="icono" > 
-                              <a href="<?php echo $link?>" target="_blank" title="<?php echo $nom_red?>">
-                                <i style="color: <?php echo $color?>;" class="<?php echo $icono?>"></i>
-                              
-                              </a>
-                             </div>
-                        </div>
-                        
-                    </div>
-                    <?php } 
-                    } ?>
-                    <!-- fin del ciclo -->   
-                </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- end Our Client -->
  
     </div>
 
