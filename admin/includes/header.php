@@ -98,7 +98,7 @@ if (empty($_SESSION['active'])) {
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Paginas para la tienda</h6>
                         <a class="collapse-item" href="productos.php">Productos</a>
-                        <a class="collapse-item" href="#">Pedidos</a>
+                        <a class="collapse-item" href="pedido.php">Pedidos</a>
                         <a class="collapse-item" href="#">Reportes</a>
                     </div>
                 </div>
