@@ -32,7 +32,8 @@
 			            }
 			        } //fin del while
 			        if ($insertPre) {
-			        	header("Location: registro.php");
+
+			        	header("Location: registro.php?res=si");
 			        }
                 }else{
                 	echo "problemas";

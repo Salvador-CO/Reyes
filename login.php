@@ -15,7 +15,7 @@
                 $clave = md5(mysqli_real_escape_string($conexion, $_POST['clave']));
 
                 $query = mysqli_query($conexion, "SELECT * FROM usuarios WHERE correo = '$correo' AND clave = '$clave' ");
-                mysqli_close($conexion);
+                
                 $resultado = mysqli_num_rows($query);
                 if ($resultado > 0) {
                     $dato = mysqli_fetch_array($query);
@@ -28,9 +28,20 @@
                     
                     header('location: direcion.php');
                 } else {
-                    $alert = '<br><div class="alert alert-danger" role="alert">
+                     
+                    $query2=mysqli_query($conexion,"SELECT * FROM cliente WHERE correo = '$correo' AND estado = 'inactivo'");
+                    $resultado = mysqli_num_rows($query2);
+                    if ($resultado > 0) {
+                        $dato = mysqli_fetch_array($query2);
+                        $alert = '<br><div class="alert alert-danger" role="alert">
+                            Usuario no activado espere la activacion
+                            </div>';
+                    }else{
+                        $alert = '<br><div class="alert alert-danger" role="alert">
                     Usuario o Contraseña Incorrecta
                     </div>';
+                    }
+                    
                     session_destroy();
                 }
             }

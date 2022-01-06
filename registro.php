@@ -203,6 +203,7 @@
         </form>
     </div>
     <!--  -->
+
    
 
     <!-- seccion clara -->
@@ -210,3 +211,19 @@
     <!-- fin seccion clara -->
 
     <?php include_once "include/footer.php"; ?>
+
+    <?php  
+        if (isset($_GET['res'])) {
+            ?>
+            <script type="text/javascript">
+
+            alertify.alert().set({'startMaximized':false, 'message':'<center><b><font size="5" color="#3498DB"> Usuario registrado con exito espere su activacion para poder entrar al carrito de compras</font></b><br></center>',
+          'onok': function(){ window.location.href = "login.php"; }}).show();
+        </script>
+
+            <?php
+        }else{
+
+        }
+
+    ?>
