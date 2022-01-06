@@ -1,4 +1,16 @@
-<?php include_once "includes/header.php"; ?>
+<?php include_once "includes/header.php"; 
+$permiso = "productos"; //cambiar el nombre
+    $sqlper = mysqli_query($conexion, 
+      "SELECT `estado` FROM `detalle_permisos` WHERE `nom_permiso`='$permiso' && `id_usuario` = '$id'");
+    $per = $sqlper->fetch_assoc();
+    if(isset($per['estado']) && $per['estado']=='no' && $id != 1 ){
+        ?>
+        <script type="text/javascript">
+          alertify.alert().set({'startMaximized':true, 'message':'<center><b><font size="7" color="red"> Sin permiso para esta seccion</font></b><br><img src="img/alto.png" width="30%" alt=""></center>',
+          'onok': function(){ window.location.href = "index.php"; }}).show();
+        </script>
+        <?php 
+    }?>
 
 <!-- Contenido de la página de inicio -->
 <div class="container-fluid">

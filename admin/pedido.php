@@ -1,7 +1,7 @@
 <?php 
     include_once "includes/header.php";
 
-    $permiso = "clientes"; //cambiar el nombre
+    $permiso = "pedidos"; //cambiar el nombre
     $sqlper = mysqli_query($conexion, 
       "SELECT `estado` FROM `detalle_permisos` WHERE `nom_permiso`='$permiso' && `id_usuario` = '$id'");
     $per = $sqlper->fetch_assoc();
